@@ -5,7 +5,7 @@ const Home = () => {
     const navigate = useNavigate();
 
   return (
-    <div className="home-page realative z-20">
+    <div className="home-page">
       <h1>Tic Tac Toe</h1>
       <div className='home-content'>
         <p>Choose Game Mode</p>

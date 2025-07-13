@@ -116,7 +116,7 @@ const Board = ({ mode }) => {
     <div className="board-container">
       {isWinner ? (
         <div className="winner-container">
-          <h2 className="winner-heading">{isWinner} Won the Game</h2>
+          <h2 className="winner-heading">{isWinner} Won The Game</h2>
           <div className="button-container">
             <button onClick={handleReset} className="allbuttons">Play Again</button>
             <button onClick={() => navigate("/")} className="allbuttons">
@@ -126,7 +126,7 @@ const Board = ({ mode }) => {
         </div>
       ) : isDraw ? (
         <div className="winner-container">
-          <h2 className="winner-heading">It's a Draw!</h2>
+          <h2 className="winner-heading">It's a Draww!!</h2>
           <div className="button-container">
             <button onClick={handleReset} className="allbuttons">
               Play Again

@@ -10,10 +10,13 @@
 }
 
 body {
-  margin: 0;
-  background-color: black;
-  font-family: sans-serif;
+  background: linear-gradient(135deg, #0d0d0d);
   color: #fff;
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -34,7 +37,7 @@ body {
   gap: 50px;
   border: 2px solid #000;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
@@ -42,8 +45,8 @@ body {
 }
 
 .home-page h1 {
-  font-size: 2.5rem;
-  margin: 40px;
+  font-size: 3rem;
+  margin: 60px;
   margin-top: 80px;
   font-family: 'Press Start 2P', cursive;
   text-align: center;
@@ -58,7 +61,7 @@ body {
 
 .player-turn {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin-bottom: 50px;
 }
 
@@ -69,15 +72,15 @@ body {
 }
 
 .square {
-  gap: 10px;
-  height: 100px;
-  width: 100px;
+
+  height: 10rem;
+  width: 10rem;
   min-width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   user-select: none;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
@@ -106,9 +109,9 @@ body {
 }
 
 .winner-heading {
-  font-size: 2rem;
-  font-family: 'Press Start 2P', cursive;
-  margin-bottom: 40px;
+  font-size: 4rem;
+  font-family: 'Rajdhani', cursive;
+  margin-bottom: 80px;
   line-height: 1.5;
   text-align: center;
 }
@@ -163,8 +166,8 @@ body {
 }
 
 .element {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 8rem;
+  font-weight: 600;
   color:#fff;
   animation: pop 0.3s ease;
 }
@@ -191,6 +194,11 @@ body {
     align-items: center;
     gap: 15px;
   }
+  .square {
+    height: 6rem;
+    width: 6rem;
+    min-width: 80px;
+  }
   .home-content{
     padding: 30px;
     margin: 10px;
@@ -211,8 +219,13 @@ body {
   }
 
   .winner-heading {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    line-height: 2;
   }
-
-  
+  .element {
+    font-size: 4.5rem;
+  }
+  .player-turn {
+    font-size: 2rem;
+  }
 }

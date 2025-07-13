@@ -1,23 +1,25 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Game from "./Game";
 import Home from "./Home";
-import Particles from "./Particles.jsx";
+import Particles from "./Particles";
 
 const App = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-black text-white">
+    <div className="relative min-h-screen bg-black text-white">
       <Particles
-        particleCount={500}
-        particleColors={["#ffffff","#fff"]}
-        speed={0.05}
-        particleBaseSize={200}
+        particleCount={300}
+        particleColors={["#ffffff", "#ffffff"]}
+        speed={0.1}
+        particleSpread={10}
+        particleBaseSize={100}
         moveParticlesOnHover={true}
-        
         particleHoverFactor={1.5}
-        alphaParticles={true}
+        alphaParticles={false}
+        disableRotation={false}
       />
+
       <div className="relative z-10">
-        <BrowserRouter>
+        <BrowserRouter basename="/Tic-Tac-Toe"> {/* ✅ This line fixes it */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/game" element={<Game />} />

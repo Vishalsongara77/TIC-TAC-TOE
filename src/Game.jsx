@@ -6,7 +6,7 @@ const Game = () => {
   const mode = searchParams.get("mode");
 
   return (
-    <div className="game relative z-20">
+    <div >
         <Board mode={mode}/>
     </div>
   );
