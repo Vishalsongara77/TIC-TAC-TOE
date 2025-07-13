@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 50px;
+  gap: 50px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.home-page h1 {
+  font-size: 2.5rem;
+  margin: 40px;
+  margin-top: 80px;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+.home-page p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+
+
+.player-turn {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  gap: 10px;
+  height: 100px;
+  width: 100px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+
+  transition: background-color 0.3s ;
+}
+
+.square:hover {
+  background-color: #f0f0f052;
+}
+
+.board-container {
+  margin: 20px;
+  margin-top: 100px;
+}
+
+.winner-container {
+  margin: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.winner-heading {
+  font-size: 2rem;
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.allbuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  white-space: nowrap;
+  width: 100%;
+  min-width: max-content;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.winner-container .allbuttons {
+  width: 100%;
+  max-width: 300px;
+}
+.home-content .allbuttons {
+  background: rgba(255, 255, 255, 0.002);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.08);
+}
+
+.allbuttons:hover {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.element {
+  font-size: 3rem;
+  font-weight: bold;
+  color:#fff;
+  animation: pop 0.3s ease;
+}
+
+
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .home-content{
+    padding: 30px;
+    margin: 10px;
+  }
+
+  .allbuttons {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .home-page h1 {
+    font-size: 1.5rem;
+    margin: 50px 0 40 0;
+  }
+
+  .home-page p {
+    font-size: 1.5rem;
+  }
+
+  .winner-heading {
+    font-size: 1.5rem;
+  }
+
+  
+}
