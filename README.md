@@ -1,12 +1,53 @@
-# React + Vite
+# 🧠 Tic Tac Toe (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo: https://vishalsongara77.github.io/TIC-TAC-TOE/
 
-Currently, two official plugins are available:
+## 🚀 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Tic Tac Toe** is a classic turn-based game built using **React**. This web version allows:
+- Two-player gameplay
+- Clean, interactive UI
+- Responsive layout for different screen sizes
 
-## Expanding the ESLint configuration
+It demonstrates React component structure, state management, and event handling in a game scenario.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎮 Features
+
+- **Interactive gameplay** — players take turns clicking squares
+- **Game status updates** — shows whose turn it is
+- **Win detection logic** — game alerts when someone wins or if it’s a draw
+- **Responsive UI** — works on mobile and desktop
+
+## 🛠 Built With
+
+- **React** — component-based UI
+- **CSS** — styling and layout
+- **JavaScript** — game logic
+
+## 📖 How It Works
+
+This app uses React’s **state and props** to:
+- Track moves and board state
+- Detect winning combinations
+- Update UI dynamically based on user interactions
+
+The main logic lives in the board component, which checks win conditions after each move.
+
+## 📚 What I Learned
+
+- React component architecture
+- Handling user events in React
+- Conditional rendering based on game state
+- Basic game logic implementation
+
+## 🛠 Future Improvements
+
+- Add AI opponent (single-player mode)
+- Animate moves or UI transitions
+
+
+## 🙌 Try It Out
+
+Click through the live demo and enjoy the game!
+
+> https://vishalsongara77.github.io/TIC-TAC-TOE/
